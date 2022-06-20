@@ -1,7 +1,7 @@
 <template>
     <div v-if="isLoadingPlaces" class="alert alert-primary text-center mt-3">
         <h5>Cargando</h5>
-        <span>Espere por favor...</span>
+        <span>Espere por favor..</span>
     </div>
     <div v-else class="list-group mt-3">
         <a href="#" v-for="(place, index) in places" :key="index" class="list-group-item list-group-item-action"
