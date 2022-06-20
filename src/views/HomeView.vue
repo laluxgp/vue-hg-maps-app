@@ -1,8 +1,18 @@
 <template>
-    <MapView />
-    <SearchBarVue />
-    <MyLocationBtnVue />
-    <TripDetailsVue />
+  <div class="row-fluid">
+    <div class="span12">
+      <MapView />
+      <TripDetailsVue />
+      <div class="row-fluid">
+        <div class="span6">
+          <SearchBarVue />
+        </div>
+        <div class="span6">
+          <MyLocationBtnVue />
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -25,7 +35,10 @@ export default defineComponent({
   },
   setup() {
     usePlacesStore();
-    
+
   }
 });
 </script>
+
+<style scoped>
+</style>

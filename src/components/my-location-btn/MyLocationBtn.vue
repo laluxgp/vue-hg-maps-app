@@ -1,7 +1,7 @@
 <template>
-  <button v-if="isBtnReady" class="btn btn-primary" @click="onMyLocationClicked">
-      Ir a mi ubicación
-  </button>
+    <button v-if="isBtnReady" class="btn btn-primary" @click="onMyLocationClicked">
+        Ir a mi ubicación
+    </button>
 </template>
 
 <script lang="ts">
@@ -11,13 +11,13 @@ import { computed, defineComponent } from 'vue'
 export default defineComponent({
     name: "MyLocationBtn",
     setup() {
-        const {userLocation, isUserLocationReady} = usePlacesStore();
-        const {map, isMapReady} = useMapStore();
+        const { userLocation, isUserLocationReady } = usePlacesStore();
+        const { map, isMapReady } = useMapStore();
 
-        
+
         return {
 
-            isBtnReady: computed<boolean>(() => isUserLocationReady.value && isMapReady.value ),
+            isBtnReady: computed<boolean>(() => isUserLocationReady.value && isMapReady.value),
 
             onMyLocationClicked: () => {
                 map.value?.flyTo({
@@ -33,9 +33,19 @@ export default defineComponent({
 
 
 <style scoped>
+button {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    right: 30px;
+    top: 30px;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
     button {
-        position: fixed;
-        top: 30px;
-        right: 30px;
+        bottom: 140px;
+        right: 16px;
+        top: auto;
     }
+}
 </style>

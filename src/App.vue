@@ -9,7 +9,7 @@
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, Avenir, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
@@ -33,5 +33,11 @@ nav a.router-link-exact-active {
   bottom: 24px;
   right: 24px;
   width: 100px;
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .logo {
+      width: 60px;
+    }
 }
 </style>

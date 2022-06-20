@@ -18,6 +18,21 @@
     border-radius: 10px !important;
     overflow: hidden;
     padding: 5px;
-    width: 250px;
+    width: 350px;
+}
+input {
+    width: 340px;
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    input {
+        width: 300px;
+    }
+    .searchbar-container {
+        font-size: small;
+        top: 24px;
+        left: .8rem;
+        width: 310px;
+    }
 }
 </style>
