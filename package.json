@@ -1,5 +1,5 @@
 {
-  "name": "hg-maps-app",
+  "name": "vue-hg-maps-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {

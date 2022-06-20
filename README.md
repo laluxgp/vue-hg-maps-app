@@ -1,4 +1,4 @@
-# hg-maps-app
+# vue-hg-maps-app
 
 ## Project setup
 ```
