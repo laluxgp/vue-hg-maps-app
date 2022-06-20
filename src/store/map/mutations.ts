@@ -44,7 +44,6 @@ const mutation: MutationTree<MapState> = {
                 .setLngLat([lng, lat])
                 .setPopup(popup)
                 .addTo(state.map);
-
             
             state.markers.push(marker);
         }
